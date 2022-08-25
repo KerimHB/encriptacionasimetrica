@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="js/jquery-3.5.0.min.js" charset="utf-8"></script>
+    <script src="js/jsencrypt.min.js" charset="utf-8"></script>
+
+    <title>Encriptacion PHP</title>
+</head>
+
+<body>
+    <div class="p-1">
+        <form id="frmEnviarTexto" class="" action="index.html" method="post">
+            <div class="input-group mb-1">
+                <label for="txtTexto" class="p-1"><b>Texto:</b></label>
+                <input type="text" id="txtTexto" name="txtTexto" class="form-control" autocomplete="off">
+                <button type="submit" name="btnEnviarTexto" class="btn btn-light">
+                    Enviar
+                </button>
+            </div>
+        </form>
+        <div class="table-responsive">
+            <table class="table table-sm">
+                <thead class="thead-light">
+                    <tr>
+                        <th>Desencriptado</th>
+                        <th>Encriptado</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>
